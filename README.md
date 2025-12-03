@@ -72,6 +72,7 @@ Conducting exploratory data analysis is essential to address the project's liste
 **Questions I wanted to answer from this dataset**
 
 Total Number of employees laid off in the past 4 years
+
 ```Select sum(Laid_Off_Count) as Total_Layoffs
 from layoff_staging2```
 
