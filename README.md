@@ -69,8 +69,44 @@ Stored as:
 
 Conducting exploratory data analysis is essential to address the project's listed questions and objectives.
 
-Questions I wanted to answer from this dataset
+**Questions I wanted to answer from this dataset**
 
-```Total Number of employees laid off in the past 4 years
-Select sum(Laid_Off_Count) as Total_Layoffs
+Total Number of employees laid off in the past 4 years
+```Select sum(Laid_Off_Count) as Total_Layoffs
 from layoff_staging2```
+
+**⭐ Total Records**
+```SELECT COUNT(*) FROM layoff_staging2;```
+
+**⭐ Total Companies**
+```SELECT COUNT(DISTINCT Company) FROM layoff_staging2;```
+
+**⭐ Layoffs by Company**
+```SELECT Company, SUM(Laid_Off_Count)
+FROM layoff_staging2
+GROUP BY Company
+ORDER BY 2 DESC;```
+
+**⭐ Layoffs by Industry**
+```SELECT Industry, SUM(Laid_Off_Count)
+FROM layoff_staging2
+GROUP BY Industry
+ORDER BY 2 DESC;```
+
+**⭐ Layoffs by Country**
+```SELECT Country, SUM(Laid_Off_Count)
+FROM layoff_staging2
+GROUP BY Country;```
+
+**⭐ Monthly Trend**
+```SELECT DATE_FORMAT(Date,'%Y-%m') AS month,
+       SUM(Laid_Off_Count)
+FROM layoff_staging2
+GROUP BY month
+ORDER BY month;```
+
+**⭐ Top 5 Companies Per Year**
+```WITH CompanyYear AS (...),
+Ranked AS (...)
+SELECT * FROM Ranked WHERE ranking <= 5;```
+
