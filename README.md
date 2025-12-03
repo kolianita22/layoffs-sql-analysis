@@ -8,7 +8,7 @@ The main goal of this project is to gain understanding from Layoffs dataset, exp
 
 **About Data**
 ________________________________________________________________________________________________________
-This project's data was obtained from the Kaggle Layoffs Dataset and it encompasses the layoffs from across the world after Covid-19 pandemic. The data contains 9 columns and 3300 rows:
+This project's data was obtained from the Kaggle Layoffs Dataset. The data contains 9 columns and 3300 rows:
 | Column         | Description                      | Data Type |
 | -------------- | -------------------------------- | --------- |
 | Company        | Name of the company              | VARCHAR   |
@@ -26,13 +26,13 @@ This project's data was obtained from the Kaggle Layoffs Dataset and it encompas
 **Analysis List**
 ________________________________________________________________________________________________________
 Industry Analysis
-The objective of this analysis is to find which Industry had the most number of layoffs after the Covid-19 pandemic.
+The objective of this analysis is to find which Industry had the most number of layoffs .
 
 Company Analysis
 Perform an analysis on the data to gain insights into different companies, determine the company which laid off most employees.
 
 Country Analysis
-The objective of this analysis is to find which Country had the most number of layoffs after the Covid-19 pandemic.
+The objective of this analysis is to find which Country had the most number of layoffs.
 
 Stage Analysis
 Perform an analysis on the data to gain insights into different stages of the company, to determine the company which laid off most employees.
