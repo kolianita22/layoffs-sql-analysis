@@ -99,6 +99,13 @@ ORDER BY 2 DESC;```
 FROM layoff_staging2
 GROUP BY Country;```
 
+**⭐Stage-wise layoffs**
+SELECT Stage,sum(Laid_Off_Count)
+from layoff_staging2
+group by Stage
+order by 2 desc;
+
+
 **⭐ Monthly Trend**
 ```SELECT DATE_FORMAT(Date,'%Y-%m') AS month,
        SUM(Laid_Off_Count)
